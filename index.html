@@ -78,8 +78,8 @@
     </div>
 
     <script>
-        // Fetch data from our local backend proxy
-        fetch("api.php")
+        const API = "GsK6WdJMvERexXn5CodCuiJsI93N5eRJsR40FPmH"
+        fetch("https://api.nasa.gov/planetary/apod?api_key=" + API)
             .then(res => res.json())
             .then(data => { 
                 if(data.error) {
